@@ -36,6 +36,32 @@
   .form-control {
     border-radius: 5%;
   }
+
+  #thank-you-message {
+    background-color: #ffffef;
+    border: 2px solid #484842;
+    color: #484842;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  #story-form .form-control {
+    background-color: #fffff7;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #484842;
+  }
+  
+  #story-form input::placeholder {
+    color: #999;
+  }
+  
+  #story-form button {
+    font-weight: bold;
+  }
   
   /* ==================================================
      Cards & Layout Blocks
@@ -62,6 +88,11 @@
     object-fit: cover;
   }
   
+  .post-image {
+    width: 30%;
+    display: block;
+    margin: 0 auto; /* centers the image */
+  }
   /* ==================================================
      Buttons
      ================================================== */

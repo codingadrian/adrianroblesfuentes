@@ -1,37 +1,39 @@
 ---
 layout: main
-title: Privacy Policy
-permalink: /privacy-policy/
+title: Política de Privacidad
+permalink: /politica-de-privacidad/
 comments: false
 ---
 
-### Information that is gathered from visitors
-In common with other websites, log files are stored on the web server saving details such as the visitor's IP address, browser type, referring page and time of visit.
+## Política de Privacidad
 
-Cookies may be used to remember visitor preferences when interacting with the website.
+### Información recopilada de los visitantes
+Al igual que otros sitios web, se almacenan archivos de registro en el servidor web que guardan detalles como la dirección IP del visitante, el tipo de navegador, la página de referencia y la hora de la visita.
 
-Where registration is required, the visitor's email and a username will be stored on the server.
+Pueden utilizarse cookies para recordar las preferencias del visitante al interactuar con el sitio web.
 
-### How the Information is used
-The information is used to enhance the vistor's experience when using the website to display personalised content and possibly advertising.
+Cuando se requiere registro, el correo electrónico y un nombre de usuario del visitante serán almacenados en el servidor.
 
-E-mail addresses will not be sold, rented or leased to 3rd parties.
+### Cómo se utiliza la información
+La información se utiliza para mejorar la experiencia del visitante al utilizar el sitio web, mostrando contenido personalizado y posiblemente publicidad.
 
-E-mail may be sent to inform you of news of our services or offers by us or our affiliates.
+Las direcciones de correo electrónico no serán vendidas, alquiladas ni cedidas a terceros.
 
-### Visitor Options
-If you have subscribed to one of our services, you may unsubscribe by following the instructions which are included in e-mail that you receive.
+Podremos enviar correos electrónicos para informarte sobre novedades de nuestros servicios u ofertas propias o de nuestros afiliados.
 
-You may be able to block cookies via your browser settings but this may prevent you from access to certain features of the website.
+### Opciones del visitante
+Si te has suscrito a uno de nuestros servicios, puedes darte de baja siguiendo las instrucciones incluidas en los correos electrónicos que recibas.
+
+Es posible que puedas bloquear las cookies desde la configuración de tu navegador, pero esto podría impedir el acceso a ciertas funcionalidades del sitio web.
 
 ### Cookies
-Cookies are small digital signature files that are stored by your web browser that allow your preferences to be recorded when visiting the website. Also they may be used to track your return visits to the website.
+Las cookies son pequeños archivos con firma digital que almacena tu navegador web y que permiten registrar tus preferencias al visitar el sitio. También pueden usarse para rastrear tus visitas recurrentes.
 
-3rd party advertising companies may also use cookies for tracking purposes.
+Empresas publicitarias de terceros también pueden utilizar cookies con fines de seguimiento.
 
 ### Google Ads
-Google, as a third party vendor, uses cookies to serve ads.
+Google, como proveedor externo, utiliza cookies para mostrar anuncios.
 
-Google's use of the DART cookie enables it to serve ads to visitors based on their visit to sites they visit on the Internet.
+El uso de la cookie DART por parte de Google le permite mostrar anuncios a los visitantes en función de sus visitas a otros sitios en Internet.
 
-Website visitors may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.
+Los visitantes del sitio pueden optar por desactivar el uso de la cookie DART visitando la política de privacidad de la red de contenido y anuncios de Google.

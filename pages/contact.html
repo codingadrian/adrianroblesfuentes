@@ -6,25 +6,47 @@ comments: false
 ---
 <!-- Contact Section -->
 <section class="contact-section py-5 bg-light text-center">
-  <div class="container">
+  <div class="container" style="max-width: 700px;">
     <!-- Invitation -->
     <h2 class="mb-3">¿Quieres saber más o colaborar?</h2>
     <p class="mb-4">Estoy disponible para charlar sobre libros, historia o cualquier proyecto cultural. ¡Conversemos!</p>
 
     <!-- Contact Form -->
-    <form action="https://formspree.io/f/mblokoke" method="POST">
-      <input type="hidden" name="_redirect" value="{{ site.baseurl }}/gracias.html">
-      
-      <div class="mb-3">
-        <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+    <div class="bg-white p-4 rounded shadow-sm">
+      <form id="contact-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScMCf1XH5C4m9qkfjQE17lnsaADEybuye0ytfZAPT8VLV6wVQ/formResponse"
+        method="POST" target="hidden_iframe" onsubmit="handleSubmit(); return true;">
+
+        <div class="mb-3">
+          <input type="text" name="entry.1738008921" class="form-control" placeholder="Tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" name="emailAddress" class="form-control" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="mb-3">
+          <textarea name="entry.2060015286" class="form-control" placeholder="Tu mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100"><span>Enviar mensaje</span></button>
+      </form>
+
+      <!-- Confirmation message -->
+      <div id="thank-you-message" class="alert alert-success mt-4" style="display: none;">
+        ¡Gracias! Te responderé pronto.
       </div>
-      <div class="mb-3">
-        <input type="email" name="email" class="form-control" placeholder="Tu correo electrónico" required>
-      </div>
-      <div class="mb-3">
-        <textarea name="message" class="form-control" placeholder="Tu mensaje" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary"><span>Enviar mensaje</span></button>
-    </form>
+    </div>
+
+    <!-- Hidden iframe -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </div>
 </section>
 
+<script>
+  function handleSubmit() {
+    setTimeout(() => {
+      const form = document.getElementById('contact-form');
+      const message = document.getElementById('thank-you-message');
+      form.style.display = 'none';
+      message.style.display = 'block';
+    }, 100);
+  }
+</script>

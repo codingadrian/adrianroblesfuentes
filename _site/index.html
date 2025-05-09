@@ -101,23 +101,30 @@
   <!-- Container ================================================== -->
   <main class="container flex-grow-1">
     <!-- Hero Section with Background -->
-<div class="hero-section text-white text-center d-flex flex-column justify-content-center align-items-center" style="background-image: url('/path/to/your-background.jpg'); background-size: cover; background-position: center; padding: 80px 20px;">
-    <h2 class="mb-3">Voces del ayer, escritas para hoy</h2>
-    <h4 class="fw-light" style="max-width: 800px;">Descubre las historias olvidadas de Costa Rica. Narradas con rigor investigativo, sensibilidad cultural y una voz que rescata las raíces de nuestro pueblo.</h4>
-  </div>
+<div class="hero-section text-white text-center d-flex flex-column justify-content-center align-items-center"
+  style="background-image: url('/path/to/your-background.jpg'); background-size: cover; background-position: center; padding: 80px 20px;">
+  <h2 class="mb-3">Voces del ayer, escritas para hoy</h2>
+  <h4 class="fw-light" style="max-width: 800px;">Descubre las historias olvidadas de Costa Rica. Narradas con rigor
+    investigativo, sensibilidad cultural y una voz que rescata las raíces de nuestro pueblo.</h4>
+</div>
 
 <!-- Book Launch Section: La Ruta de las Tormentas -->
 <section class="py-5 text-center">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-5 mb-4 mb-md-0">
-        <img src="/assets/images/ship-on-fire.png" alt="La Ruta de las Tormentas" class="img-fluid rounded shadow">
+        <img src="/assets/images/ship-on-fire.png" alt="La Ruta de las Tormentas"
+          class="img-fluid rounded shadow">
       </div>
       <div class="col-md-7 text-md-start">
         <h2 class="mb-3">La Ruta de las Tormentas</h2>
-        <p class="lead">Una novela histórica que revive el cuarto viaje de Cristóbal Colón y el primer encuentro entre españoles y pueblos indígenas en las costas de Costa Rica.</p>
-        <p>Inspirada en hechos reales y escrita con una mirada crítica y poética, esta obra entrelaza el drama del viaje con la resistencia de los pueblos originarios. Desde tormentas implacables hasta encuentros espirituales, cada página revela una Costa Rica ancestral como nunca antes contada.</p>
-        <a href="/libros/la-ruta-de-las-tormentas/" class="btn btn-primary mt-3"><span>Conocer el libro</span></a>
+        <p class="lead">Una novela histórica que revive el cuarto viaje de Cristóbal Colón y el primer encuentro entre
+          españoles y pueblos indígenas en las costas de Costa Rica.</p>
+        <p>Inspirada en hechos reales y escrita con una mirada crítica y poética, esta obra entrelaza el drama del viaje
+          con la resistencia de los pueblos originarios. Desde tormentas implacables hasta encuentros espirituales, cada
+          página revela una Costa Rica ancestral como nunca antes contada.</p>
+        <a href="/libros/la-ruta-de-las-tormentas/" class="btn btn-primary mt-3"><span>Conocer el
+            libro</span></a>
       </div>
     </div>
   </div>
@@ -128,23 +135,39 @@
   <div class="container">
     <h2 class="mb-3">Tu primera historia gratis</h2>
     <p class="lead mb-4" style="max-width: 700px; margin: 0 auto;">
-      Como agradecimiento por tu interés, quiero regalarte una historia exclusiva ambientada en la era de hielo y con los primeros pobladores de este pedacito de tierra. Llena el formulario y disfrutá.
+      Como agradecimiento por tu interés, quiero regalarte una historia exclusiva ambientada en la era de hielo y con
+      los primeros pobladores de este pedacito de tierra. Llena el formulario y disfrutá.
     </p>
 
-<form action="https://formsubmit.io/send/tuemail@ejemplo.com" method="POST" class="row justify-content-center">
-  <input type="hidden" name="_redirect" value="/gracias.html">
-  <input type="text" name="_formsubmit_id" style="display:none">
-  
-  <div class="col-md-6">
-    <div class="mb-3">
-      <input type="email" name="email" class="form-control" placeholder="Tu correo electrónico" required>
+    <div class="bg-light p-4 rounded shadow-sm mx-auto" style="max-width: 600px;">
+      <form id="story-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSf-QvdtDBB6lQayTg_5DQCYAQ5dLcG38Hd3Kb_IqQKaDy8Vhw/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted=true;">
+    
+        <div class="mb-3">
+          <input type="email" name="emailAddress" class="form-control" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" name="entry.1683042879" class="form-control" placeholder="Tu nombre (opcional)">
+        </div>
+        <input type="text" name="bot-field" style="display:none">
+        <button type="submit" class="btn btn-primary w-100"><span>Recibir historia</span></button>
+      </form>
     </div>
-    <div class="mb-3">
-      <input type="text" name="name" class="form-control" placeholder="Tu nombre (opcional)">
-    </div>
-    <button type="submit" class="btn btn-primary"><span>Recibir historia</span></button>
+    
+    <script>
+      var submitted = false;
+      var redirectTo = "/gracias/";
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) window.location = redirectTo;"></iframe>
+    
+    
   </div>
-</form>
+</section>
+
+
 
     <hr>
   </main>
@@ -174,13 +197,13 @@
 
 
   <div class="copyright small mt-3">
-    Copyright © 2025 Adrián Robles Fuentes. All rights reserved.
+    Copyright © 2025 Adrián Robles Fuentes. Todos los derechos reservados.
   </div>
   
   <ul class="p-0 mb-1 small">
     
     <li>
-      <a href="/privacy-policy/"
+      <a href="/politica-de-privacidad/"
         alt="Política de Privacidad">Política de Privacidad</a>
     </li>
     
