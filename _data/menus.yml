@@ -1,0 +1,24 @@
+# Top Menu
+topmenu:
+
+# - title: 
+#  url: ""
+
+- title: Sobre mí
+  url: "sobremi/"
+
+- title: Libros
+  url: "libros/"
+
+- title: Blog
+  url: "blog/"
+  
+- title: Contacto
+  url: "contacto/"
+
+
+# Footer Menu
+footermenu:
+
+- title: Política de Privacidad
+  url: "privacy-policy/"

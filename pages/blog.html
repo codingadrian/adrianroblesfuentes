@@ -1,0 +1,48 @@
+---
+layout: main
+title: Blog
+permalink: /blog/
+---
+
+<!-- Blog Section Intro -->
+<section class="container text-center my-5">
+  <h1>Historias y Crónicas</h1>
+  <p class="lead">Explora relatos inspirados en la historia de Costa Rica, desde la época precolombina hasta la
+    actualidad.</p>
+</section>
+
+<!-- Blog Posts List -->
+<section class="container my-5">
+  <div class="row">
+    {% for post in site.posts %}
+    <div class="col-md-12 mb-4">
+      <div class="card flex-md-row h-100">
+
+        {% if post.image %}
+        <div class="col-md-3 d-flex align-items-center p-0">
+          <img src="{{ post.image | relative_url }}" class="img-fluid object-fit-contain rounded-start"
+            style="height: 160px; width: 100%; object-fit: contain;" alt="{{ post.title }}">
+
+        </div>
+
+        {% endif %}
+
+        <div class="col-md-8 p-4 d-flex flex-column justify-content-between">
+          <div>
+            <h4 class="card-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h4>
+            <p class="card-text"><small class="text-muted">{{ post.date | date: "%d %B %Y" }}</small></p>
+            <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+
+          </div>
+          <div>
+            <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary btn-sm"><span>Leer más</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

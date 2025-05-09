@@ -1,0 +1,192 @@
+/* ==================================================
+   Base Styles
+   ================================================== */
+
+   body {
+    background: #ffffef;
+  }
+  
+  /* Logo */
+  #logo {
+    max-width: 50%;
+    margin: 0 10px;
+  }
+  
+  /* ==================================================
+     Navigation
+     ================================================== */
+  
+  .navigation-wrap {
+    background: #ffffef;
+  }
+  
+  .navbar-brand {
+    margin-right: 0;
+  }
+  
+  /* ==================================================
+     Forms & Inputs
+     ================================================== */
+  
+  #mc_embed_signup .foot {
+    grid-template-columns: 4fr !important;
+    width: 100% !important;
+  }
+  
+  .form-control {
+    border-radius: 5%;
+  }
+  
+  /* ==================================================
+     Cards & Layout Blocks
+     ================================================== */
+  
+  .card {
+    background-color: #ffffef;
+  }
+  
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    aspect-ratio: 2 / 3; /* Optional for modern browsers */
+    border-radius: 2%;
+  }
+  
+  /* Optional Light Background Utility */
+  .bg-light {
+    background-color: #fffff7 !important;
+  }
+  
+  /* Object Fit Utility */
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
+  /* ==================================================
+     Buttons
+     ================================================== */
+  
+  /* Primary button styles */
+  .btn-primary {
+    background-color: #484842;
+    border-color: #484842;
+  }
+  
+  /* Primary button hover and focus styles */
+  .btn-primary:hover {
+    background-color: #484842;
+    border-color: #484842;
+  }
+  
+  .btn-primary:hover span {
+    animation: fireFade 3s forwards;
+  }
+  
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary:focus:active {
+    background-color: #484842 !important;
+    border-color: #484842 !important;
+    box-shadow: none !important;
+    color: inherit;
+  }
+  
+  /* Outline button styles */
+  .btn-outline-primary {
+    border-color: #484842;
+    color: black;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: transparent;
+    border-color: #484842;
+  }
+  
+  .btn-outline-primary:hover span {
+    animation: fireFade 1s forwards;
+  }
+  
+  .btn-outline-primary:focus,
+  .btn-outline-primary:active,
+  .btn-outline-primary:focus:active {
+    background-color: transparent !important;
+    border-color: #484842 !important;
+    color: #484842 !important;
+    box-shadow: none !important;
+  }
+  
+  /* ==================================================
+     Fire Fade Animation
+     ================================================== */
+  
+  @keyframes fireFade {
+    0%   { color: #ffffff; }
+    25%  { color: #ffd580; }
+    50%  { color: #ff9900; }
+    75%  { color: #ff6600; }
+    100% { color: #cc0000; }
+  }
+  
+  /* ==================================================
+     Footer
+     ================================================== */
+  
+  footer {
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ffffef;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  footer ul li {
+    display: inline;
+  }
+  
+  footer ul a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Footer Social Icons */
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+  }
+  
+  footer .social-icons a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ff6600;
+  }
+  
+  /* ==================================================
+     Blog Post Content
+     ================================================== */
+  
+  .post-content a {
+    text-decoration: underline;
+    color: #484842;
+    transition: color 0.3s ease;
+  }
+  
+  .post-content a:hover {
+    color: #ff6600;
+  }
+  

@@ -1,0 +1,31 @@
+---
+layout: main
+title: Contacto
+permalink: "/contacto/"
+comments: false
+---
+<!-- Contact Section -->
+<section class="contact-section py-5 bg-light text-center">
+  <div class="container">
+    <!-- Invitation -->
+    <h2 class="mb-3">¿Quieres saber más o colaborar?</h2>
+    <p class="mb-4">Estoy disponible para charlar sobre libros, historia o cualquier proyecto cultural. ¡Conversemos!</p>
+
+    <!-- Contact Form -->
+    <form action="https://formsubmit.io/send/tuemail@ejemplo.com" method="POST">
+      <input type="hidden" name="_redirect" value="{{ site.baseurl }}/gracias.html">
+      <input type="text" name="_formsubmit_id" style="display:none">
+    
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Tu correo electrónico" required>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" placeholder="Tu mensaje" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary"><span>Enviar mensaje</span></button>
+    </form>
+</section>
+
