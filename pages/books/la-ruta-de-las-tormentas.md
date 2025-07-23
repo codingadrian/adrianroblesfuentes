@@ -3,7 +3,7 @@ layout: main
 title: La Ruta de las Tormentas
 permalink: /libros/la-ruta-de-las-tormentas/
 image: /assets/images/hiddencover.png
-price: "₡7,500"
+price: "₡"
 ---
 
 <section class="container my-5">
