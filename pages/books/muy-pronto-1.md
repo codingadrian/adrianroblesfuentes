@@ -3,7 +3,7 @@ layout: main
 title: Muy pronto!
 permalink: /libros/muy-pronto-1/
 image: /assets/images/hut-on-fire.png
-price: "₡8,000"
+price: ""
 ---
 
 <section class="container my-5">

@@ -2,7 +2,7 @@
 layout: main
 title: La Ruta de las Tormentas
 permalink: /libros/la-ruta-de-las-tormentas/
-image: /assets/images/ship-on-fire.png
+image: /assets/images/hiddencover.png
 price: "₡7,500"
 ---
 
@@ -20,8 +20,8 @@ price: "₡7,500"
 
       <h3>Opiniones</h3>
       <ul>
-        <li><strong>María J.:</strong> “Una narrativa que respira selva y memoria ancestral. Me atrapó.”</li>
-        <li><strong>Diego F.:</strong> “Historia viva. Impresionante el detalle y la emoción.”</li>
+        <li><strong>María J.:</strong> “Qué bueno leer algo que va más allá de lo típico que nos contaron en el colegio. Este libro me abrió los ojos.”</li>
+        <li><strong>Diego F.:</strong> “De verdad se siente el cariño y la investigación que hay detrás. Es como encontrar un tesoro escondido de nuestra historia.”</li>
       </ul>
 
       <a href="https://wa.me/50612345678?text=Adrián%2C%20estoy%20interesado%20en%20comprar%20La%20Ruta%20de%20las%20Tormentas." 
