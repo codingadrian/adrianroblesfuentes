@@ -1,0 +1,41 @@
+<footer class="footer container text-center">
+
+    <!-- Social Links -->
+    <div class="social-icons">
+      {% if site.social.facebook %}
+      <a href="{{ site.social.facebook }}" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+      {% endif %}
+      {% if site.social.twitter %}
+      <a href="{{ site.social.twitter }}" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter fs-4"></i>
+      </a>
+      {% endif %}
+      {% if site.social.instagram %}
+      <a href="{{ site.social.instagram }}" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+      {% endif %}
+      {% if site.email %}
+      <a href="mailto:{{ site.email }}" aria-label="Email">
+        <i class="bi bi-envelope-fill fs-4"></i>
+      </a>
+      {% endif %}
+    </div>
+
+
+    <div class="copyright small mt-3">
+      Copyright © 2025 Adrián Robles Fuentes. Todos los derechos reservados.
+    </div>
+
+    <ul class="p-0 mb-1 small">
+      {% for item in site.data.menus.footermenu %}
+      <li>
+        <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
+          alt="{{item.title}}">{{item.title}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </footer>

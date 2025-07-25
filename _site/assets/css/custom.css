@@ -9,7 +9,19 @@ body {
   padding: 0;
   height: 100%;
   font-family: "Averia Serif Libre", serif;
+  color: #1C1C1C;
+  font-size: 19px;
 }
+
+/* Narrow every .container down to max 900px and center it */
+.container {
+  max-width: 1000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 /* Logo */
 #logo {
@@ -107,26 +119,39 @@ form textarea::placeholder,
   opacity: 0.8;
 }
 
-/* Unified Buttons */
-#story-form button,
-.btn-primary,
-.contact-form button {
+/* --------------------------------------------------
+   Unified Buttons
+   -------------------------------------------------- */
+
+/* General Bootstrap buttons size to their content */
+.btn-primary {
   background-color: #e96e00 !important;
   border: none !important;
   border-radius: 8px !important;
   padding: 0.8rem 1.5rem !important;
   font-weight: bold !important;
   color: #1C1C1C !important;
-  width: 100% !important;
+  display: inline-block;      /* default */
+  width: auto !important;     /* let them shrink‐wrap */
   transition: background-color 0.3s ease !important;
 }
 
-#story-form button:hover,
-.btn-primary:hover,
-.contact-form button:hover {
+/* But keep your story‐form button full‐width */
+#story-form button {
+  width: 100% !important;
+}
+
+/* Hover stays the same */
+.btn-primary:hover {
   background-color: #1C1C1C !important;
   color: #fff !important;
 }
+
+#story-form button {
+  width: auto !important;
+  display: inline-block !important;
+}
+
 
 /* ==================================================
    Cards & Layout Blocks
@@ -196,6 +221,17 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
   color: #e96e00;
+}
+
+/* Footer links match blog‑post link style */
+.footer a {
+  color: #0c2e26 !important;       /* same dark green */
+  text-decoration: underline !important;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #951600 !important;      /* same hover red */
 }
 
 /* ==================================================
@@ -275,14 +311,5 @@ footer .social-icons a:hover {
     width: 90%;
     max-width: 90%;
     padding: 0;
-  }
-}
-
-/* --- Mobile / touch: avoid blurry fixed backgrounds on iOS --- */
-@media (hover: none) and (pointer: coarse), (max-width: 768px) {
-  html, body {
-    background-attachment: scroll !important;   /* <-- key line */
-    background-position: center top;
-    background-size: cover;
   }
 }
