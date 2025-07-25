@@ -340,3 +340,26 @@ footer .social-icons a:hover {
     font-size: 0.9rem;
   }
 }
+
+
+/* On phones, disable fixed background entirely */
+@media (max-width: 768px) {
+  body {
+    /* re‑declare the full shorthand, swapping in “scroll” */
+    background: url('/assets/images/background.png') 
+                no-repeat center top scroll !important;
+    background-size: cover !important;
+    /* just in case */
+    background-attachment: scroll !important;
+  }
+}
+
+/* iOS‑only WebKit hack (optional) */
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    background: url('/assets/images/background.png') 
+                no-repeat center top scroll !important;
+    background-size: cover !important;
+    background-attachment: scroll !important;
+  }
+}
