@@ -13,6 +13,13 @@ body {
   font-size: 19px;
 }
 
+/* On phones: switch to exact viewport sizing */
+@media (max-width: 576px) {
+  body {
+    background-size: 100vw 100vh;
+  }
+}
+
 /* Narrow every .container down to max 900px and center it */
 .container {
   max-width: 1000px !important;
