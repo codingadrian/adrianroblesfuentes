@@ -3,7 +3,12 @@
    ================================================== */
 
 body {
-  background: #ffffef;
+  background: url('/assets/images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Averia Serif Libre", serif;
 }
 
 /* Logo */
@@ -13,79 +18,134 @@ body {
 }
 
 /* ==================================================
-     Navigation
-     ================================================== */
+   Navigation
+   ================================================== */
+
+header,
+footer,
+.navigation-wrap {
+  background: transparent !important;
+}
 
 .navigation-wrap {
-  background: #ffffef;
+  position: static !important;
 }
 
 .navbar-brand {
   margin-right: 0;
 }
 
+.navbar-nav {
+  font-size: 1.2em;
+}
 
 /* ==================================================
-     Forms & Inputs
-     ================================================== */
+   Forms & Inputs
+   ================================================== */
 
 #mc_embed_signup .foot {
   grid-template-columns: 4fr !important;
   width: 100% !important;
 }
 
-.form-control {
-  border-radius: 5%;
-}
-
 #thank-you-message {
-  background-color: #ffffef;
-  border: 2px solid #484842;
-  color: #484842;
+  background: transparent;
+  border: none;
+  color: #1C1C1C;
   border-radius: 8px;
   padding: 1.5rem;
   font-size: 1.2rem;
 }
 
-#story-form .form-control {
-  background-color: #fffff7;
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  color: #484842;
+/* Unified Form Container */
+#story-form,
+form,
+.contact-form {
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-#story-form input::placeholder {
-  color: #999;
+/* Unified Inputs and Textarea */
+#story-form .form-control,
+form input.form-control,
+form textarea.form-control,
+.contact-form .form-control {
+  width: 100% !important;
+  max-width: 100% !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem !important;
+  color: #1C1C1C !important;
+  box-sizing: border-box !important;
+  transition: border 0.3s ease, box-shadow 0.3s ease !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  margin-bottom: 1rem !important;
 }
 
-#story-form button {
-  font-weight: bold;
+#story-form .form-control:focus,
+form input.form-control:focus,
+form textarea.form-control:focus,
+.contact-form .form-control:focus {
+  border-color: #1C1C1C !important;
+  box-shadow: 0 0 5px rgba(72, 72, 66, 0.5) !important;
+  outline: none !important;
+}
+
+#story-form input::placeholder,
+form input::placeholder,
+form textarea::placeholder,
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #1C1C1C;
+  opacity: 0.8;
+}
+
+/* Unified Buttons */
+#story-form button,
+.btn-primary,
+.contact-form button {
+  background-color: #e96e00 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 0.8rem 1.5rem !important;
+  font-weight: bold !important;
+  color: #1C1C1C !important;
+  width: 100% !important;
+  transition: background-color 0.3s ease !important;
+}
+
+#story-form button:hover,
+.btn-primary:hover,
+.contact-form button:hover {
+  background-color: #1C1C1C !important;
+  color: #fff !important;
 }
 
 /* ==================================================
-     Cards & Layout Blocks
-     ================================================== */
+   Cards & Layout Blocks
+   ================================================== */
 
 .card {
-  background-color: #ffffef;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
   height: 400px;
-  object-fit: fill;
-  aspect-ratio: 2 / 3;
-  /* Optional for modern browsers */
+  object-fit: cover;
+  width: 100%;
   border-radius: 2%;
 }
 
-/* Optional Light Background Utility */
-.bg-light {
-  background-color: #fffff7 !important;
-}
-
-/* Object Fit Utility */
 .object-fit-cover {
   object-fit: cover;
 }
@@ -94,97 +154,16 @@ body {
   width: 30%;
   display: block;
   margin: 0 auto;
-  /* centers the image */
 }
 
 /* ==================================================
-     Buttons
-     ================================================== */
-
-/* Primary button styles */
-.btn-primary {
-  background-color: #484842;
-  border-color: #484842;
-}
-
-/* Primary button hover and focus styles */
-.btn-primary:hover {
-  background-color: #484842;
-  border-color: #484842;
-}
-
-.btn-primary:hover span {
-  animation: fireFade 3s forwards;
-}
-
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary:focus:active {
-  background-color: #484842 !important;
-  border-color: #484842 !important;
-  box-shadow: none !important;
-  color: inherit;
-}
-
-/* Outline button styles */
-.btn-outline-primary {
-  border-color: #484842;
-  color: black;
-}
-
-.btn-outline-primary:hover {
-  background-color: transparent;
-  border-color: #484842;
-}
-
-.btn-outline-primary:hover span {
-  animation: fireFade 1s forwards;
-}
-
-.btn-outline-primary:focus,
-.btn-outline-primary:active,
-.btn-outline-primary:focus:active {
-  background-color: transparent !important;
-  border-color: #484842 !important;
-  color: #484842 !important;
-  box-shadow: none !important;
-}
-
-/* ==================================================
-     Fire Fade Animation
-     ================================================== */
-
-@keyframes fireFade {
-  0% {
-    color: #ffffff;
-  }
-
-  25% {
-    color: #ffd580;
-  }
-
-  50% {
-    color: #ff9900;
-  }
-
-  75% {
-    color: #ff6600;
-  }
-
-  100% {
-    color: #cc0000;
-  }
-}
-
-/* ==================================================
-     Footer
-     ================================================== */
+   Footer
+   ================================================== */
 
 footer {
   margin-top: auto;
   padding: 20px 0;
   text-align: center;
-  background-color: #ffffef;
 }
 
 footer ul {
@@ -201,12 +180,6 @@ footer ul li {
   display: inline;
 }
 
-footer ul a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Footer Social Icons */
 footer .social-icons {
   display: flex;
   justify-content: center;
@@ -222,63 +195,85 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-  color: #ff6600;
+  color: #e96e00;
 }
 
 /* ==================================================
-     Blog Post Content
-     ================================================== */
+   Blog Post Content
+   ================================================== */
 
 .post-content a {
   text-decoration: underline;
-  color: #484842;
+  color: #0c2e26;
   transition: color 0.3s ease;
 }
 
 .post-content a:hover {
-  color: #ff6600;
+  color: #951600;
 }
 
-
 .card-title a {
-  color: #484842;
+  color: #0c2e26;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-.card-title a:hover {
-  color: #ff6600;
-}
+/* ==================================================
+   Typography
+   ================================================== */
 
-.dialogo {
-  display: block;
-  text-indent: 5em;
-}
-
-.story-block p {
+.story-block p,
+.first-paragraph,
+.author-bio p {
   text-align: justify;
-  text-indent: 0;
   margin-bottom: 1em;
 }
 
 .first-paragraph {
-  text-align: justify;
   text-indent: 0.5em !important;
 }
 
-/* Drop cap: only take first line height */
 .dropcap {
   display: inline-block;
   font-size: 4em;
   font-weight: bold;
   font-family: "Averia Serif Libre", serif;
-  color: #333;
+  color: #1C1C1C;
   vertical-align: baseline;
   line-height: 1;
   margin-right: 0.05em;
 }
 
-.author-bio p {
-  text-align: justify;
+/* ==================================================
+   Responsive Design
+   ================================================== */
+
+@media (max-width: 768px) {
+  .story-block p,
+  .first-paragraph,
+  .author-bio p {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  #story-form,
+  form,
+  .contact-form {
+    padding: 1rem;
+  }
+
+  #story-form button,
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
 }
 
+@media (max-width: 1366px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    width: 90%;
+    max-width: 90%;
+    padding: 0;
+  }
+}
