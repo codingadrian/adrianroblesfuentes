@@ -277,3 +277,12 @@ footer .social-icons a:hover {
     padding: 0;
   }
 }
+
+/* --- Mobile / touch: avoid blurry fixed backgrounds on iOS --- */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+  html, body {
+    background-attachment: scroll !important;   /* <-- key line */
+    background-position: center top;
+    background-size: cover;
+  }
+}
