@@ -20,6 +20,18 @@ body {
   }
 }
 
+/* Retina swap: hi‑res @2x */
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi)
+{
+  body {
+    background-image: url('/assets/images/background@2x.png') !important;
+    background-size: cover;
+  }
+}
+
+
 /* Narrow every .container down to max 900px and center it */
 .container {
   max-width: 1000px !important;
