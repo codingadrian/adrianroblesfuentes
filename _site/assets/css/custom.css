@@ -82,6 +82,26 @@ footer,
   font-size: 1.2em;
 }
 
+/* 1) No border by default */
+.navbar-toggler {
+  border: none !important;
+}
+
+/* 2) Add border when the menu is open (toggler isn’t collapsed) */
+.navbar-toggler:not(.collapsed) {
+  border: 1px solid #0c2e26 !important;
+  border-radius: 4px !important;
+}
+
+/* 3) Also add border on keyboard focus */
+.navbar-toggler:focus {
+  border: 1px solid #0c2e26 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
 /* ==================================================
    Forms & Inputs
    ================================================== */
