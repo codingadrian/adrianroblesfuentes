@@ -2,37 +2,50 @@
    Base Styles
    ================================================== */
 
+/* 1) Remove old body background */
 body {
-  background: url('/assets/images/background.png') no-repeat center center fixed;
-  background-size: cover;
+  background: none !important;
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: "Averia Serif Libre", serif;
   color: #1C1C1C;
   font-size: 19px;
+  position: relative; /* establish stacking context for pseudo-element */
+  z-index: 0;
 }
 
-/* On phones: switch to exact viewport sizing */
-@media (max-width: 576px) {
-  body {
-    background-size: 100vw 100vh;
-  }
+/* 2) Fixed‑position, always‑crisp background via pseudo‑element */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  /* default (standard‑res) background */
+  background-image: url('/assets/images/background.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-/* Retina swap: hi‑res @2x */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi)
-{
-  body {
+/* 3) Retina (HiDPI) swap for pseudo‑element */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body::before {
     background-image: url('/assets/images/background@2x.png') !important;
     background-size: cover;
   }
 }
 
+/* ==================================================
+   Containers
+   ================================================== */
 
-/* Narrow every .container down to max 900px and center it */
+/* Narrow every .container down to max 1000px and center it */
 .container {
   max-width: 1000px !important;
   margin-left: auto !important;
@@ -40,7 +53,6 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 
 /* Logo */
 #logo {
@@ -138,9 +150,9 @@ form textarea::placeholder,
   opacity: 0.8;
 }
 
-/* --------------------------------------------------
+/* ==================================================
    Unified Buttons
-   -------------------------------------------------- */
+   ================================================== */
 
 /* General Bootstrap buttons size to their content */
 .btn-primary {
@@ -150,27 +162,21 @@ form textarea::placeholder,
   padding: 0.8rem 1.5rem !important;
   font-weight: bold !important;
   color: #1C1C1C !important;
-  display: inline-block;      /* default */
-  width: auto !important;     /* let them shrink‐wrap */
+  display: inline-block !important;
+  width: auto !important;
   transition: background-color 0.3s ease !important;
 }
 
-/* But keep your story‐form button full‐width */
+/* Keep the story‑form button full‑width */
 #story-form button {
   width: 100% !important;
 }
 
-/* Hover stays the same */
+/* Hover state */
 .btn-primary:hover {
   background-color: #1C1C1C !important;
   color: #fff !important;
 }
-
-#story-form button {
-  width: auto !important;
-  display: inline-block !important;
-}
-
 
 /* ==================================================
    Cards & Layout Blocks
@@ -244,13 +250,13 @@ footer .social-icons a:hover {
 
 /* Footer links match blog‑post link style */
 .footer a {
-  color: #0c2e26 !important;       /* same dark green */
+  color: #0c2e26 !important;
   text-decoration: underline !important;
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: #951600 !important;      /* same hover red */
+  color: #951600 !important;
 }
 
 /* ==================================================
@@ -326,10 +332,13 @@ footer .social-icons a:hover {
 }
 
 @media (max-width: 1366px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
     width: 90%;
     max-width: 90%;
     padding: 0;
   }
 }
-
