@@ -2,8 +2,8 @@
 layout: main
 title: La Ruta de las Tormentas
 permalink: /libros/la-ruta-de-las-tormentas/
-image: /assets/images/hiddencover.png
-price: "₡"
+image: /assets/images/portadaimp.png
+price: "₡6 500"
 ---
 
 <section class="container my-5">
@@ -13,7 +13,7 @@ price: "₡"
     </div>
     <div class="col-md-7">
       <h1 class="mb-3">{{ page.title }}</h1>
-      <p class="lead text-muted mb-4"><strong>Precio:</strong> {{ page.price }}</p>
+      <p class="lead text-muted mb-4"><strong>Precio:</strong> {{ page.price }} Preventa</p>
 
       <h3>Resumen</h3>
       <p>En el año 1502, una tormenta arrastra una expedición española a las costas del Caribe costarricense. Lo que parece ser un naufragio más se convierte en el inicio de un encuentro violento y mágico con las culturas indígenas de la región.</p>
@@ -24,7 +24,7 @@ price: "₡"
         <li><strong>Diego F.:</strong> “De verdad se siente el cariño y la investigación que hay detrás. Es como encontrar un tesoro escondido de nuestra historia.”</li>
       </ul>
 
-      <a href="https://wa.me/50612345678?text=Adrián%2C%20estoy%20interesado%20en%20comprar%20La%20Ruta%20de%20las%20Tormentas." 
+      <a href="https://wa.me/50660384056?text=Adrián%2C%20estoy%20interesado%20en%20comprar%20La%20Ruta%20de%20las%20Tormentas." 
    class="btn btn-primary" 
    target="_blank" 
    rel="noopener noreferrer">

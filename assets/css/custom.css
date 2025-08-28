@@ -82,6 +82,15 @@ footer,
   font-size: 1.2em;
 }
 
+.nav-link {
+  color: #0c2e26 !important;
+}
+
+.nav-link:hover {
+  color: #951600 !important;
+  transition: color 0.3s ease;
+}
+
 /* 1) No border by default */
 .navbar-toggler {
   border: none !important;
@@ -140,7 +149,7 @@ form textarea.form-control,
   width: 100% !important;
   max-width: 100% !important;
   background: rgba(255, 255, 255, 0.2) !important;
-  border: 1px solid #ccc !important;
+  border: 1px solid #1C1C1C !important;
   border-radius: 8px !important;
   padding: 0.75rem 1rem !important;
   font-size: 1rem !important;
