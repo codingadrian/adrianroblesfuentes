@@ -3,7 +3,7 @@ layout: post
 title: "Bibliografía y recursos utilizados en La Ruta de las Tormentas"
 author: adrian
 categories: [escritura creativa, nota]
-image: assets/images/man looking at the moon.png
+image: assets/images/man in the middle of the jungle.png
 description: Descubre las fuentes históricas y académicas utilizadas en la novela *La Ruta de las Tormentas*, una obra de ficción histórica sobre el cuarto viaje de Cristóbal Colón y su paso por Centroamérica.
 ---
 
