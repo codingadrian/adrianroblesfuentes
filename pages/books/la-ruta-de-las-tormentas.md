@@ -24,7 +24,7 @@ price: "₡6 500"
         <li><strong>Diego F.:</strong> “De verdad se siente el cariño y la investigación que hay detrás. Es como encontrar un tesoro escondido de nuestra historia.”</li>
       </ul>
 
-      <a href="https://wa.me/50672329167?text=Adrián%2C%20estoy%20interesado%20en%20comprar%20La%20Ruta%20de%20las%20Tormentas." 
+      <a href="https://wa.me/50662858028?text=Adrián%2C%20estoy%20interesado%20en%20comprar%20La%20Ruta%20de%20las%20Tormentas." 
    class="btn btn-primary" 
    target="_blank" 
    rel="noopener noreferrer">
