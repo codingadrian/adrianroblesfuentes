@@ -18,6 +18,15 @@ price: "₡6 500"
       <h3>Resumen</h3>
       <p>En el año 1502, una tormenta arrastra una expedición española a las costas del Caribe costarricense. Lo que parece ser un naufragio más se convierte en el inicio de un encuentro violento y mágico con las culturas indígenas de la región.</p>
 
+      <p>Editorial: Círculo y Punto Ediciones</p>
+      <p>Primera edición.</p>
+      <p>Dimensiones: 14 x 21 cm</p>
+      <p>ISBN: 978-9930-613-69-6</p>
+      <p>Publicado: 18 de agosto de 2025</p>
+      <p>Formato: Tapa blanda (rústica)</p>
+      <p>Número de páginas: 120</p>
+      <p>Idioma: Español</p>
+
       <h3>Opiniones</h3>
       <ul>
         <li><strong>María J.:</strong> “Qué bueno leer algo que va más allá de lo típico que nos contaron en el colegio. Este libro me abrió los ojos.”</li>
