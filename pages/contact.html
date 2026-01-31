@@ -9,26 +9,34 @@ comments: false
   <div class="container" style="max-width: 700px;">
     <!-- Invitation -->
     <h2 class="mb-3">¿Quieres saber más o colaborar?</h2>
-    <p class="mb-4">Estoy disponible para charlar sobre libros, historia o cualquier proyecto cultural. ¡Conversemos!</p>
+    <p class="mb-4">Estoy disponible para charlar sobre libros, historia o cualquier proyecto cultural. ¡Conversemos!
+    </p>
     <p>También me podés escribir directamente a yo@adrianroblesfuentes.com</p>
 
     <!-- Contact Form -->
     <div class="p-4 rounded shadow-sm">
       <form id="contact-form"
         action="https://docs.google.com/forms/d/e/1FAIpQLScMCf1XH5C4m9qkfjQE17lnsaADEybuye0ytfZAPT8VLV6wVQ/formResponse"
-        method="POST" target="hidden_iframe" onsubmit="handleSubmit(); return true;">
+        method="POST">
 
         <div class="mb-3">
           <input type="text" name="entry.1738008921" class="form-control" placeholder="Tu nombre" required>
         </div>
+
         <div class="mb-3">
           <input type="email" name="emailAddress" class="form-control" placeholder="Tu correo electrónico" required>
         </div>
+
         <div class="mb-3">
           <textarea name="entry.2060015286" class="form-control" placeholder="Tu mensaje" rows="5" required></textarea>
         </div>
+
         <button type="submit" class="btn btn-primary w-100"><span>Enviar mensaje</span></button>
       </form>
+
+      <div id="thank-you-message" class="alert alert-success mt-4" style="display:none;">
+        ¡Gracias! Te responderé pronto.
+      </div>
 
       <!-- Confirmation message -->
       <div id="thank-you-message" class="alert alert-success mt-4" style="display: none;">
@@ -42,12 +50,26 @@ comments: false
 </section>
 
 <script>
-  function handleSubmit() {
-    setTimeout(() => {
-      const form = document.getElementById('contact-form');
-      const message = document.getElementById('thank-you-message');
+  const form = document.getElementById('contact-form');
+  const message = document.getElementById('thank-you-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    try {
+      const formData = new FormData(form);
+
+      await fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      });
+
       form.style.display = 'none';
       message.style.display = 'block';
-    }, 100);
-  }
+    } catch (err) {
+      console.error(err);
+      alert('No se pudo enviar el mensaje. Intentá de nuevo.');
+    }
+  });
 </script>
